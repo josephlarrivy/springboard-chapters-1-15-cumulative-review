@@ -224,3 +224,95 @@ arrays
 /*
 objects
 */
+//objects are unordered
+//sccess object values by their key
+//object values can be variables
+
+//accessing values in an object
+    //to access an object value, must know key
+    //dot notation: object.key; returns object's value for that key
+    //bracket notation: object['key']: returns object's value for that key
+
+//updating values in an object:
+    //similar syntax to accessing values, but set them equal to the new value
+    //example: obj.key = 'new value';
+    //example: obj[key] = 'newer value';
+
+//removing keys from an object
+    // delete obj.key;
+
+//storing values from an object
+    //const variableName = obj.key;
+    //const anotherVariableName = obj.key;
+
+//.has own property can be called on an object key to check if that key has a value
+    //object.hasOwnProperty('key');  returns true of false depending on if there is a corresponding value for the key
+
+/*
+loops
+*/
+//for loops use indices to iterate
+//for...of loops can iterate through objects directly
+//while loops - another way to iterate over an object
+        //example:
+            // let i=0;
+            //while (i <3) {
+                //console.log(i);
+                //i++;
+            //};
+//break and continue can be used to with if statements inside of loops to control if values need to be skipped or if the loops needs to be briken out of because a condition was met
+
+//object.keys iterates over an object and returns an array or its keys
+//object.values iterates over an object and returns an array of its values
+
+//iterating over nested arrays
+//example:
+// const ticTacToe = [
+//     ["X", "O", "X"],
+//     ["X", "O", "O"],
+//     ["X", "O", "X"]
+//     ];
+
+//     let xCount = 0;
+//     for(let i = 0; i < ticTacToe.length; i++){
+//         for(let j = 0; j < ticTacToe[i].length; j++){
+//             if(ticTacToe[i][j] === "X"){
+//                 xCount++;
+//             }
+//         }
+//     }
+
+/*
+JS functions
+*/
+
+/*
+forEach
+*/
+//steps that forEach takes
+    //loops through an array
+    //runs a callback function for each value in the array
+    //returns undefined (always returns undefined)
+
+/*
+map (arrays)
+*/
+//map is used to create a new array by:
+    //iterating over an existing array
+    //running a callback frunction for each value in the existing array
+    //adding the result of the callback to the new array
+    //returns a new array of the same length as the original
+
+//using map in a function
+/*
+function squareValues(array){
+    return array.map(function(value){
+    return value ** 2;
+    });
+    }
+    squareValues([2,3,4]) // [4,9,16]
+*/
+
+/*
+filter
+*/
