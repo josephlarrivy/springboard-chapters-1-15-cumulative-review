@@ -558,3 +558,45 @@ JavaScript events
 
 
 // ----------------------ES2015----------------------------
+/*
+variables
+*/
+
+//var is not used anymore
+    //var is hoisted to the top of its scope
+    //var can be reassigned and redeclared
+
+//let
+    //let is block scoped
+    //value is not available outside of its scope
+    //can be reassigned within its scope, but not redeclared
+
+//const
+    //const is block scoped
+    //prevents a variable from ever being reassigned or redelared
+
+/*
+arrow functions
+*/
+
+//shorthand for function expressions
+//cannot be named
+//ideal for shortening callbacks
+//example:
+    //[1, 2, 3].forEach(function (n, idx) {
+        //console.log(n, idx);
+    //});
+
+        //is the same as
+  
+    //[1, 2, 3].forEach((n, idx) => {
+        //console.log(n, idx);
+    //});
+
+//arrow functions have an implicit return if on one line:
+    //let nums = [1, 2, 3];
+    //let arrSquared = nums.map(n => n ** 2); // [1, 4, 9]
+
+/*
+rest/spread operator
+*/
